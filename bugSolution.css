@@ -1,0 +1,18 @@
+/* Solution: bugSolution.css */
+
+/* Handle potential negative values from calc() using max() or min() to constrain to a sensible range */
+.container {
+  width: calc(min(100% - 10px, 500px)); /* Limit minimum width */
+}
+
+/* Ensure unit consistency in calculations */
+.element {
+  width: calc(100px + 20px); /* Consistent px units */
+  height: calc(10em + 2em); /* Consistent em units */
+}
+
+/* Alternatively convert all units into one consistent unit like px, em, rem etc.*/
+.element2 {
+  width: calc(100px + 16px); /* All in px for clear understanding */
+  height: calc(10px + 2px); /* All in px for clear understanding */
+}
